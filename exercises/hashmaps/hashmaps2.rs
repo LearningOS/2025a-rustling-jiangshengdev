@@ -35,9 +35,7 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
     ];
 
     for fruit in fruit_kinds {
-        if !basket.contains_key(&fruit) {
-            basket.insert(fruit, 1);
-        }
+        basket.entry(fruit).or_insert(1);
     }
 }
 
