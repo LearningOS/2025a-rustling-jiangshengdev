@@ -33,3 +33,251 @@ path = "src/lib.rs"
 assert_cmd = "0.11.0"
 predicates = "1.0.1"
 glob = "0.3.0"
+
+# AUTO-GENERATED EXERCISE BINARIES START - DO NOT EDIT MANUALLY
+# Generated on: Fri Sep 19 20:46:01 CST 2025
+# Files processed: 61
+[[bin]]
+name = "generics_generics1"
+path = "exercises/generics/generics1.rs"
+
+[[bin]]
+name = "options_options3"
+path = "exercises/options/options3.rs"
+
+[[bin]]
+name = "strings_strings1"
+path = "exercises/strings/strings1.rs"
+
+[[bin]]
+name = "strings_strings4"
+path = "exercises/strings/strings4.rs"
+
+[[bin]]
+name = "strings_strings2"
+path = "exercises/strings/strings2.rs"
+
+[[bin]]
+name = "intro_intro2"
+path = "exercises/intro/intro2.rs"
+
+[[bin]]
+name = "intro_intro1"
+path = "exercises/intro/intro1.rs"
+
+[[bin]]
+name = "smart_pointers_arc1"
+path = "exercises/smart_pointers/arc1.rs"
+
+[[bin]]
+name = "smart_pointers_box1"
+path = "exercises/smart_pointers/box1.rs"
+
+[[bin]]
+name = "smart_pointers_rc1"
+path = "exercises/smart_pointers/rc1.rs"
+
+[[bin]]
+name = "primitive_types_primitive_types3"
+path = "exercises/primitive_types/primitive_types3.rs"
+
+[[bin]]
+name = "primitive_types_primitive_types2"
+path = "exercises/primitive_types/primitive_types2.rs"
+
+[[bin]]
+name = "primitive_types_primitive_types1"
+path = "exercises/primitive_types/primitive_types1.rs"
+
+[[bin]]
+name = "primitive_types_primitive_types5"
+path = "exercises/primitive_types/primitive_types5.rs"
+
+[[bin]]
+name = "conversions_try_from_into"
+path = "exercises/conversions/try_from_into.rs"
+
+[[bin]]
+name = "conversions_from_str"
+path = "exercises/conversions/from_str.rs"
+
+[[bin]]
+name = "conversions_using_as"
+path = "exercises/conversions/using_as.rs"
+
+[[bin]]
+name = "conversions_from_into"
+path = "exercises/conversions/from_into.rs"
+
+[[bin]]
+name = "traits_traits1"
+path = "exercises/traits/traits1.rs"
+
+[[bin]]
+name = "traits_traits5"
+path = "exercises/traits/traits5.rs"
+
+[[bin]]
+name = "move_semantics_move_semantics3"
+path = "exercises/move_semantics/move_semantics3.rs"
+
+[[bin]]
+name = "move_semantics_move_semantics6"
+path = "exercises/move_semantics/move_semantics6.rs"
+
+[[bin]]
+name = "move_semantics_move_semantics2"
+path = "exercises/move_semantics/move_semantics2.rs"
+
+[[bin]]
+name = "move_semantics_move_semantics5"
+path = "exercises/move_semantics/move_semantics5.rs"
+
+[[bin]]
+name = "move_semantics_move_semantics1"
+path = "exercises/move_semantics/move_semantics1.rs"
+
+[[bin]]
+name = "move_semantics_move_semantics4"
+path = "exercises/move_semantics/move_semantics4.rs"
+
+[[bin]]
+name = "enums_enums2"
+path = "exercises/enums/enums2.rs"
+
+[[bin]]
+name = "enums_enums1"
+path = "exercises/enums/enums1.rs"
+
+[[bin]]
+name = "tests_tests7"
+path = "exercises/tests/tests7.rs"
+
+[[bin]]
+name = "tests_tests8"
+path = "exercises/tests/tests8.rs"
+
+[[bin]]
+name = "tests_build"
+path = "exercises/tests/build.rs"
+
+[[bin]]
+name = "lifetimes_lifetimes1"
+path = "exercises/lifetimes/lifetimes1.rs"
+
+[[bin]]
+name = "lifetimes_lifetimes3"
+path = "exercises/lifetimes/lifetimes3.rs"
+
+[[bin]]
+name = "lifetimes_lifetimes2"
+path = "exercises/lifetimes/lifetimes2.rs"
+
+[[bin]]
+name = "error_handling_errors3"
+path = "exercises/error_handling/errors3.rs"
+
+[[bin]]
+name = "error_handling_errors5"
+path = "exercises/error_handling/errors5.rs"
+
+[[bin]]
+name = "macros_macros3"
+path = "exercises/macros/macros3.rs"
+
+[[bin]]
+name = "macros_macros2"
+path = "exercises/macros/macros2.rs"
+
+[[bin]]
+name = "macros_macros1"
+path = "exercises/macros/macros1.rs"
+
+[[bin]]
+name = "macros_macros4"
+path = "exercises/macros/macros4.rs"
+
+[[bin]]
+name = "threads_threads2"
+path = "exercises/threads/threads2.rs"
+
+[[bin]]
+name = "threads_threads3"
+path = "exercises/threads/threads3.rs"
+
+[[bin]]
+name = "threads_threads1"
+path = "exercises/threads/threads1.rs"
+
+[[bin]]
+name = "variables_variables2"
+path = "exercises/variables/variables2.rs"
+
+[[bin]]
+name = "variables_variables6"
+path = "exercises/variables/variables6.rs"
+
+[[bin]]
+name = "variables_variables3"
+path = "exercises/variables/variables3.rs"
+
+[[bin]]
+name = "variables_variables4"
+path = "exercises/variables/variables4.rs"
+
+[[bin]]
+name = "variables_variables1"
+path = "exercises/variables/variables1.rs"
+
+[[bin]]
+name = "variables_variables5"
+path = "exercises/variables/variables5.rs"
+
+[[bin]]
+name = "clippy_clippy1"
+path = "exercises/clippy/clippy1.rs"
+
+[[bin]]
+name = "clippy_clippy3"
+path = "exercises/clippy/clippy3.rs"
+
+[[bin]]
+name = "clippy_clippy2"
+path = "exercises/clippy/clippy2.rs"
+
+[[bin]]
+name = "functions_functions3"
+path = "exercises/functions/functions3.rs"
+
+[[bin]]
+name = "functions_functions2"
+path = "exercises/functions/functions2.rs"
+
+[[bin]]
+name = "functions_functions1"
+path = "exercises/functions/functions1.rs"
+
+[[bin]]
+name = "functions_functions5"
+path = "exercises/functions/functions5.rs"
+
+[[bin]]
+name = "functions_functions4"
+path = "exercises/functions/functions4.rs"
+
+[[bin]]
+name = "modules_modules1"
+path = "exercises/modules/modules1.rs"
+
+[[bin]]
+name = "modules_modules2"
+path = "exercises/modules/modules2.rs"
+
+[[bin]]
+name = "modules_modules3"
+path = "exercises/modules/modules3.rs"
+
+[[bin]]
+name = "iterators_iterators1"
+path = "exercises/iterators/iterators1.rs"
+# AUTO-GENERATED EXERCISE BINARIES END
