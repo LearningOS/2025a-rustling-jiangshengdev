@@ -76,33 +76,31 @@ impl<T> LinkedList<T> {
         let mut a_ptr = list_a.start;
         let mut b_ptr = list_b.start;
 
-        unsafe {
-            // 当两个链表都还有元素时，比较并选择较小的元素
-            while let (Some(a), Some(b)) = (a_ptr, b_ptr) {
-                let node_a = a.as_ref();
-                let node_b = b.as_ref();
+        // 当两个链表都还有元素时，比较并选择较小的元素
+        while let (Some(a), Some(b)) = (a_ptr, b_ptr) {
+            let node_a = unsafe { a.as_ref() };
+            let node_b = unsafe { b.as_ref() };
 
-                if node_a.val <= node_b.val {
-                    result.add(node_a.val.clone());
-                    a_ptr = node_a.next;
-                } else {
-                    result.add(node_b.val.clone());
-                    b_ptr = node_b.next;
-                }
-            }
-
-            // 添加剩余节点
-            while let Some(node) = a_ptr {
-                let node_a = node.as_ref();
+            if node_a.val <= node_b.val {
                 result.add(node_a.val.clone());
                 a_ptr = node_a.next;
-            }
-
-            while let Some(node) = b_ptr {
-                let node_b = node.as_ref();
+            } else {
                 result.add(node_b.val.clone());
                 b_ptr = node_b.next;
             }
+        }
+
+        // 添加剩余节点
+        while let Some(a) = a_ptr {
+            let node_a = unsafe { a.as_ref() };
+            result.add(node_a.val.clone());
+            a_ptr = node_a.next;
+        }
+
+        while let Some(b) = b_ptr {
+            let node_b = unsafe { b.as_ref() };
+            result.add(node_b.val.clone());
+            b_ptr = node_b.next;
         }
 
         result
