@@ -3,8 +3,8 @@ name = "rustlings"
 description = "Small exercises to get you used to reading and writing Rust code!"
 version = "5.5.1"
 authors = [
-  "Liv <mokou@fastmail.com>",
-  "Carol (Nichols || Goulding) <carol.nichols@gmail.com>",
+    "Liv <mokou@fastmail.com>",
+    "Carol (Nichols || Goulding) <carol.nichols@gmail.com>",
 ]
 edition = "2021"
 
@@ -24,6 +24,10 @@ tokio = { version = "1.21.2", features = ["full"] }
 [[bin]]
 name = "rustlings"
 path = "src/main.rs"
+
+[lib]
+name = "rustlings"
+path = "src/lib.rs"
 
 [dev-dependencies]
 assert_cmd = "0.11.0"
