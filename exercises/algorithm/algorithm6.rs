@@ -28,18 +28,19 @@ impl Graph {
             return;
         }
 
-        let mut deque = VecDeque::with_capacity(n);
+        let mut stack = VecDeque::with_capacity(n);
+        stack.push_back(v);
 
-        visited.insert(v);
-        deque.push_back(v);
-        visit_order.push(v);
+        while let Some(u) = stack.pop_back() {
+            if visited.contains(&u) {
+                continue;
+            }
+            visited.insert(u);
+            visit_order.push(u);
 
-        while let Some(u) = deque.pop_back() {
-            for &w in &self.adj[u] {
+            for &w in self.adj[u].iter().rev() {
                 if !visited.contains(&w) {
-                    visit_order.push(w);
-                    visited.insert(w);
-                    deque.push_back(w);
+                    stack.push_back(w);
                 }
             }
         }
