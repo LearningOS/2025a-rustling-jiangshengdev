@@ -30,17 +30,15 @@ impl Graph {
 
         let mut stack = VecDeque::with_capacity(n);
         stack.push_back(v);
+        visited.insert(v);
 
         while let Some(u) = stack.pop_back() {
-            if visited.contains(&u) {
-                continue;
-            }
-            visited.insert(u);
             visit_order.push(u);
 
             for &w in self.adj[u].iter().rev() {
                 if !visited.contains(&w) {
                     stack.push_back(w);
+                    visited.insert(w);
                 }
             }
         }
